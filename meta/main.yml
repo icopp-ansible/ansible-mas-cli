@@ -13,4 +13,4 @@ galaxy_info:
     - packaging
 
 dependencies:
-  - src: icopp.homebrew
+  - role: icopp.homebrew
