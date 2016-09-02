@@ -1,0 +1,23 @@
+---
+
+- vars_prompt:
+    - name: "apple_id"
+      prompt: "Enter Apple ID"
+      private: yes
+  when: ansible_os_family == "Darwin" and apple_id == ""
+
+- vars_prompt:
+    - name: "apple_id_password"
+      prompt: "Enter Apple ID password"
+      private: yes
+  when: ansible_os_family == "Darwin" and apple_id_password == ""
+
+- name: Install package to manage Mac App Store
+  package:
+    name: argon/mas/mas
+    state: present
+  when: ansible_os_family == "Darwin"
+
+- name: Sign in to Mac App Store
+  command: mas signin "{{ apple_id }}" "{{ apple_id_password }}"
+  when: ansible_os_family == "Darwin"
