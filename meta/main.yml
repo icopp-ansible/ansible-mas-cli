@@ -1,5 +1,4 @@
 ---
-
 galaxy_info:
   author: Ian Copp
   description: Install the mas-cli utility and log in with it. Does nothing on non-macOS platforms.

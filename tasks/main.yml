@@ -1,5 +1,4 @@
 ---
-
 - vars_prompt:
     - name: "apple_id"
       prompt: "Enter Apple ID"
