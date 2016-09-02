@@ -13,6 +13,4 @@ galaxy_info:
     - packaging
 
 dependencies:
-  - name: icopp.homebrew
-    src: https://github.com/icopp/ansible-homebrew.git
-    scm: git
+  - src: icopp.homebrew
