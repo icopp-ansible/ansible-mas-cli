@@ -1,6 +1,6 @@
 # ansible-mas-cli
 
-Install the [`mas-cli`](https://github.com/argon/mas) utility and log in with it. Does nothing on non-macOS platforms.
+Install the [`mas-cli`](https://github.com/argon/mas) utility and log in with it.
 
 ## Role Variables
 
@@ -8,20 +8,20 @@ Install the [`mas-cli`](https://github.com/argon/mas) utility and log in with it
 
 ## Dependencies
 
-* [icopp.homebrew](https://github.com/icopp/ansible-homebrew) (included as repository dependency)
+* [icopp.homebrew](https://github.com/icopp/ansible-homebrew)
 
 ## Example Playbook
 
 ```
   - hosts: all
     roles:
-      - mas-cli
+      - role: icopp.mas-cli
 ```
 
 ```
   - hosts: all
     roles:
-      - role: mas-cli
+      - role: icopp.mas-cli
         apple_id: xxxxx@xxxxx.xxxxx
         apple_id_password: xxxxx
 ```
