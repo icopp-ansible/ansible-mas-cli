@@ -4,19 +4,13 @@ Install the [`mas-cli`](https://github.com/argon/mas) utility and log in with it
 
 ## Role Variables
 
-`apple_id` and `apple_id_password` will be prompted for if not supplied.
+`apple_id` and `apple_id_password` will be used to log in to the Mac App Store if supplied.
 
 ## Dependencies
 
 * [icopp.homebrew](https://github.com/icopp/ansible-homebrew)
 
 ## Example Playbook
-
-```
-  - hosts: all
-    roles:
-      - role: icopp.mas-cli
-```
 
 ```
   - hosts: all
