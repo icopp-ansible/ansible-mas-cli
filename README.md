@@ -1,6 +1,6 @@
 # ansible-mas-cli
 
-Install the [`mas-cli`](https://github.com/argon/mas) utility and log in with it.
+Install the [`mas-cli`](https://github.com/argon/mas) utility and optionally log in with it.
 
 ## Role Variables
 
